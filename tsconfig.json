@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "commonjs",
-    "jsx": "react-jsx",
-    "moduleResolution": "node",
+    "module": "CommonJS",
+    "jsx": "react",
+    "moduleResolution": "Node",
     "strict": true,
     "noEmit": true,
     "allowJs": true,
@@ -11,22 +11,22 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "baseUrl": "./src",
-    "paths": {
-      "@types/*": [
-        "./types/*"
-      ],
-      "@components/*": [
-        "./components/*"
-      ],
-      "@img/*": [
-        "./assets/images/*"
-      ],
-      "@style/*": [
-        "./style/*"
-      ]
-    }
+    // "paths": {
+    //   "@types/*": [
+    //     "./types/*"
+    //   ],
+    //   "@components/*": [
+    //     "./components/*"
+    //   ],
+    //   "@img/*": [
+    //     "./assets/images/*"
+    //   ],
+    //   "@style/*": [
+    //     "./style/*"
+    //   ]
+    // }
   },
   "include": [
-    "src"
+    "src",
   ]
 }
