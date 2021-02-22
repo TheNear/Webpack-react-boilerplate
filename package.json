@@ -2,12 +2,12 @@
   "name": "react-test",
   "version": "0.0.1",
   "description": "React Webpack app with tests",
-  "main": "index.js",
+  "main": "index.tsx",
   "scripts": {
     "start": "webpack serve --config ./webpack/webpack.dev.ts",
     "build": "webpack --config ./webpack/webpack.prod.ts",
-    "prettier": "prettier --write src/**/*.{js,jsx,ts,tsx}",
-    "eslint": "eslint src/**/*.{js,jsx,ts,tsx}"
+    "prettier": "prettier --write src/**/*.{t,j}s{,x}",
+    "eslint": "eslint src/**/*.{t,j}s{,x}"
   },
   "keywords": [
     "React",
@@ -36,8 +36,9 @@
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^5.0.2",
-    "eslint": "^7.20.0",
+    "eslint": "^7.2.0",
     "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^8.0.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.4.1",

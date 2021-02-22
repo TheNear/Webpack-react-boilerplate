@@ -6,8 +6,10 @@
   },
   "extends": [
     "plugin:react/recommended",
+    "airbnb-base",
     "airbnb",
     "airbnb/hooks",
+    "eslint-config-airbnb/whitespace",
     "prettier"
   ],
   "plugins": [
@@ -70,6 +72,7 @@
     "no-use-before-define": "off",
     "@typescript-eslint/no-use-before-define": [
       "error"
-    ]
+    ],
+    "react/prop-types": "off"
   }
 }
