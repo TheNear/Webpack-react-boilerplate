@@ -4,7 +4,16 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin";
 export const tsModule: RuleSetRule = {
   test: /\.(ts|js)x?$/i,
   exclude: /node_modules/,
-  loader: "babel-loader",
+  use: {
+    loader: "babel-loader",
+    options: {
+      presets: [
+        "@babel/preset-env",
+        "@babel/preset-react",
+        "@babel/preset-typescript"
+      ]
+    }
+  }
 };
 
 export const styleModuleDev: RuleSetRule = {
@@ -20,6 +29,20 @@ export const styleModuleDev: RuleSetRule = {
         sourceMap: true,
         modules: true,
       },
+    },
+    {
+      loader: "postcss-loader",
+      options: {
+        sourceMap: true,
+        postcssOptions: {
+          plugins: [
+            [
+              "postcss-preset-env",
+              "autoprefixer"
+            ]
+          ]
+        }
+      }
     },
     {
       loader: "sass-loader",
@@ -42,6 +65,21 @@ export const styleModuleProd: RuleSetRule = {
       options: {
         modules: true,
       },
+    },
+    {
+      // TODO: Проверить работу CSS-nano
+      loader: "postcss-loader",
+      options: {
+        postcssOptions: {
+          plugins: [
+            [
+              "postcss-preset-env",
+              "autoprefixer",
+              "cssnano"
+            ]
+          ]
+        }
+      }
     },
     {
       loader: "sass-loader",
