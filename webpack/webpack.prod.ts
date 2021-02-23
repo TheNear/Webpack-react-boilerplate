@@ -2,7 +2,7 @@ import { merge } from "webpack-merge";
 import { CleanWebpackPlugin } from "clean-webpack-plugin";
 import defaultConfig from "./webpack.base";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
-import { styleModuleProd } from "./modules";
+import { styleModuleProd } from "./rules/prodRules";
 
 
 export default merge(defaultConfig, {

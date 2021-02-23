@@ -1,8 +1,8 @@
 import TsconfigPathsPlugin from "tsconfig-paths-webpack-plugin";
 import { Configuration } from "webpack";
-import { moduleRules } from "./modules";
 import { PATHS } from "./path";
 import { webpackPlugins } from "./plugins";
+import { commonRules } from "./rules/commonRules";
 
 const config: Configuration = {
   entry: PATHS.ENTRY,
@@ -14,7 +14,7 @@ const config: Configuration = {
   },
   stats: "errors-warnings",
   module: {
-    rules: moduleRules,
+    rules: commonRules,
   },
   plugins: webpackPlugins,
   resolve: {

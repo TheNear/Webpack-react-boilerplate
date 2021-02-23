@@ -1,6 +1,6 @@
 import webpack from "webpack";
 import { merge } from "webpack-merge";
-import { styleModuleDev, styleModuleProd } from "./modules";
+import { styleModuleDev } from "./rules/devRules";
 import defaultConfig from "./webpack.base";
 
 export default merge(defaultConfig, {
