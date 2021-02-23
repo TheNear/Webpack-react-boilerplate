@@ -26,8 +26,16 @@ export const styleModuleDev: RuleSetRule = {
     {
       loader: "css-loader",
       options: {
+        importLoaders: 2,
         sourceMap: true,
-        modules: true,
+        modules: {
+          localIdentName: "[path][name]__[local]",
+          exportGlobals: true,
+          compileType: "module",
+          auto: true,
+          mode: "local",
+          exportOnlyLocals: false,
+        },
       },
     },
     {
@@ -38,7 +46,6 @@ export const styleModuleDev: RuleSetRule = {
           plugins: [
             [
               "postcss-preset-env",
-              "autoprefixer"
             ]
           ]
         }
@@ -63,7 +70,15 @@ export const styleModuleProd: RuleSetRule = {
     {
       loader: "css-loader",
       options: {
-        modules: true,
+        importLoaders: 2,
+        modules: {
+          localIdentName: "[hash:base64]",
+          exportGlobals: true,
+          compileType: "module",
+          auto: true,
+          mode: "local",
+          exportOnlyLocals: false,
+        },
       },
     },
     {
@@ -74,8 +89,6 @@ export const styleModuleProd: RuleSetRule = {
           plugins: [
             [
               "postcss-preset-env",
-              "autoprefixer",
-              "cssnano"
             ]
           ]
         }

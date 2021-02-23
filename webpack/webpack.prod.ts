@@ -7,6 +7,7 @@ import { styleModuleProd } from "./modules";
 
 export default merge(defaultConfig, {
   mode: "production",
+  target: "browserslist",
   optimization: {
     minimize: true,
     splitChunks: {

@@ -5,6 +5,8 @@ import defaultConfig from "./webpack.base";
 
 export default merge(defaultConfig, {
   mode: "development",
+  target: "web",
+  devtool: "eval-cheap-module-source-map",
   devServer: {
     contentBase: false,
     compress: true,
