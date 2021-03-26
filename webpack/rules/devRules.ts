@@ -3,7 +3,6 @@ import { RuleSetRule } from "webpack";
 // STYLE Loaders for development mode
 export const styleModuleDev: RuleSetRule = {
   test: /\.(c|sa|sc)ss$/i,
-  exclude: /node_modules/,
   use: [
     {
       loader: "style-loader",
