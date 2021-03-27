@@ -27,13 +27,8 @@
   },
   "settings": {
     "import/resolver": {
-      "node": {
-        "extensions": [
-          ".js",
-          ".ts",
-          ".tsx",
-          ".jsx"
-        ]
+      "webpack": {
+        "config": "./webpack/webpack.base.ts"
       }
     },
     "import/extensions": [
