@@ -7,13 +7,17 @@ export const tsModule: RuleSetRule = {
   use: {
     loader: "babel-loader",
     options: {
-      presets: [
-        "@babel/preset-env",
-        "@babel/preset-react",
-        "@babel/preset-typescript"
-      ]
-    }
-  }
+      presets: ["@babel/preset-env", "@babel/preset-react", "@babel/preset-typescript"],
+      plugins: [
+        [
+          "@babel/plugin-transform-runtime",
+          {
+            regenerator: true,
+          },
+        ],
+      ],
+    },
+  },
 };
 
 // SVG Loader for import SVG as ReactComponents in JSX\TSX
@@ -34,7 +38,6 @@ export const svgModule: RuleSetRule = {
   ],
 };
 
-
 // IMAGES Loader for import images
 export const imageModule: RuleSetRule = {
   test: /\.(jpg|gif|jpeg|png|tiff|bmp)$/i,
@@ -43,6 +46,5 @@ export const imageModule: RuleSetRule = {
     filename: "images/[hash][ext][query]",
   },
 };
-
 
 export const commonRules: RuleSetRule[] = [tsModule, svgModule, imageModule];

@@ -3,7 +3,7 @@
   "endOfLine": "lf",
   "bracketSpacing": true,
   "singleQuote": false,
-  "printWidth": 80,
+  "printWidth": 100,
   "jsxSingleQuote": false,
   "semi": true,
   "tabWidth": 2,
