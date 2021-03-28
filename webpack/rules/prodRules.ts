@@ -3,7 +3,7 @@ import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
 // STYLE loaders for production mode
 export const styleModuleProd: RuleSetRule = {
-  test: /\.(s|sa|sc)ss$/i,
+  test: /\.(c|sa|sc)ss$/i,
   use: [
     {
       loader: MiniCssExtractPlugin.loader,
