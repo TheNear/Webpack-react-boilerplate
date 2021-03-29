@@ -1,0 +1,21 @@
+.Button {
+  background-color: #1890ff;
+  color: white;
+  padding: 7px 14px;
+  font-family: sans-serif;
+  font-size: 16px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.05);
+  border: none;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    background-color: lighten(#1890ff, 10%);
+  }
+}

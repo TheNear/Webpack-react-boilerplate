@@ -1,17 +1,21 @@
-# Webpack React Typescript Boilerplate
+# 🎉 Webpack React Typescript Boilerplate 2021 🎉
+
+Freash Webpack typescript starter pack 2021 year.
 
 **Webpack configured for:**
 
-    React
-    Typescript
-    Scss/Sass/Css modules
-    Eslint
-    Prettier
+   🚀 React
+   💪 Typescript
+   💅 Scss/Sass/Css modules
+   📐 Eslint
+   🧹 Prettier
 
 **NPM commands:**
 
+```
     npm run start: start development server
     npm run build: production build
+```
 
 **Additionals:**
 
@@ -20,8 +24,7 @@
 Change path aliases in *tsconfig.json* -> *paths*. It will help you with paths like **/../../../../components/app.tsx**. And your IDE helps you with autocomplete.
 
 
+## TODO:
 
-**TODO:**
-
-- Automatic lint after commit
-- Tests
+- [x] Automatic lint after commit
+- [ ] Tests

@@ -11,20 +11,23 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "baseUrl": "./src",
-    // "paths": {
-    //   "@types/*": [
-    //     "./types/*"
-    //   ],
-    //   "@components/*": [
-    //     "./components/*"
-    //   ],
-    //   "@img/*": [
-    //     "./assets/images/*"
-    //   ],
-    //   "@style/*": [
-    //     "./style/*"
-    //   ]
-    // }
+    "paths": {
+      "@types/*": [
+        "./types/*"
+      ],
+      "@components/*": [
+        "./components/*"
+      ],
+      "@img/*": [
+        "./assets/images/*"
+      ],
+      "@style/*": [
+        "./style/*"
+      ],
+      "@pages/*": [
+        "./pages/*"
+      ]
+    }
   },
   "include": [
     "src",
