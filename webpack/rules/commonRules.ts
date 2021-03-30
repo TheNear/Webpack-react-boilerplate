@@ -1,6 +1,7 @@
 import { RuleSetRule } from "webpack";
+// Файл базовых лоадеров, которые используются как в DEV, так и в PROD режиме.
 
-// TSX/TS/TSX/JSX React files and javascript files
+// TSX/TS/TSX/JSX Loader базовый, который обрабатывает все основные файлы
 export const tsModule: RuleSetRule = {
   test: /\.(ts|js)x?$/i,
   exclude: /node_modules/,
@@ -20,7 +21,7 @@ export const tsModule: RuleSetRule = {
   },
 };
 
-// SVG Loader for import SVG as ReactComponents in JSX\TSX
+// SVG Loader который позволяет импортировать SVG как реакт компоненты
 export const svgModule: RuleSetRule = {
   test: /\.svg$/,
   exclude: /node_modules/,
@@ -38,7 +39,7 @@ export const svgModule: RuleSetRule = {
   ],
 };
 
-// IMAGES Loader for import images
+// IMAGES Loader для импорта изображений
 export const imageModule: RuleSetRule = {
   test: /\.(jpg|gif|jpeg|png|tiff|bmp)$/i,
   type: "assets/resource",

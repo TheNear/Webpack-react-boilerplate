@@ -4,6 +4,7 @@ import { PATHS } from "./path";
 import { webpackPlugins } from "./plugins";
 import { commonRules } from "./rules/commonRules";
 
+// Базовый конфиг webpack, который используется для DEV и PROD
 const config: Configuration = {
   entry: PATHS.ENTRY,
   output: {

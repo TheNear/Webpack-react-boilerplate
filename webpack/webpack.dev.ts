@@ -3,6 +3,7 @@ import { merge } from "webpack-merge";
 import { styleModuleDev } from "./rules/devRules";
 import defaultConfig from "./webpack.base";
 
+// Файл конфигурации для DEV режима webpack
 export default merge(defaultConfig, {
   mode: "development",
   target: "web",

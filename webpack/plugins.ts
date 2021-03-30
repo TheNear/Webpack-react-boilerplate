@@ -12,5 +12,6 @@ const HtmlPlugin: WebpackPluginInstance = new HtmlWebpackPlugin({
 
 const dotenvPlugin = new DotendWebpackPlugin();
 
+// Общие плагины, который используются в Dev и Prod режиме.
 export const webpackPlugins: WebpackPluginInstance[] = [HtmlPlugin, dotenvPlugin];
 

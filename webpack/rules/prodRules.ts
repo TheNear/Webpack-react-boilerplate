@@ -1,7 +1,8 @@
 import { RuleSetRule } from "webpack";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
+// Файл лоадеров, которые работают в PROD режиме.
 
-// STYLE loaders for production mode
+// STYLE loaders для стилей
 export const styleModuleProd: RuleSetRule = {
   test: /\.(c|sa|sc)ss$/i,
   use: [

@@ -11,6 +11,7 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "baseUrl": "./src",
+    // Change paths to your folder
     "paths": {
       "@types/*": [
         "./types/*"

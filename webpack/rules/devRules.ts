@@ -1,6 +1,7 @@
 import { RuleSetRule } from "webpack";
+// Файл лоадеров, которые работают в DEV режиме.
 
-// STYLE Loaders for development mode
+// STYLE Loaders для стилей
 export const styleModuleDev: RuleSetRule = {
   test: /\.(c|sa|sc)ss$/i,
   use: [
