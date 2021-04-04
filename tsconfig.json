@@ -11,7 +11,7 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "baseUrl": "./src",
-    // Change paths to your folder
+    // Сменить здесь алиасы к вашим папкам.
     "paths": {
       "@types/*": [
         "./types/*"

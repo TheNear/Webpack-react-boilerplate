@@ -31,7 +31,7 @@ export const svgModule: RuleSetRule = {
 // IMAGES Loader для импорта изображений
 export const imageModule: RuleSetRule = {
   test: /\.(jpg|gif|jpeg|png|tiff|bmp)$/i,
-  type: "assets/resource",
+  type: "asset/resource",
   generator: {
     filename: "images/[hash][ext][query]",
   },
